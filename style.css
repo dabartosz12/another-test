@@ -477,6 +477,10 @@ label{
         right: 0;
     }
 
+    .typing-effect{
+      font-size: 100%;
+    }
+
     .text h1{
         margin: 20px;
     }

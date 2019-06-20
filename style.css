@@ -335,23 +335,26 @@ label{
     font-size: 0.8rem;
 }
 
+.content-text-work{
+  max-width: 1200px;
+  margin: auto;
+}
+
 .text-wapper-work{
-    text-align: center;
     max-width: 500px;
-    margin: auto;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 .text-wapper-work h1{
     line-height: 40px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .text-wapper-work p{
-    padding: 20px;
+    padding: 20px 0;
     line-height: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .my-finished-work{
@@ -520,6 +523,11 @@ label{
       grid-gap: 10px;
       grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
       justify-content: center;
+    }
+
+    .text-wapper-work{
+      text-align: center;
+      margin: auto;
     }
 
     .work-container{

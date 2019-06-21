@@ -435,16 +435,6 @@ label{
     color: #9c9c9c;
 }
 
-.contact{
-    float: right;
-    margin-right: 20px;
-}
-
-.socials{
-    float: left;
-    margin-left: 20px;
-}
-
 .color1{color: rgb(37, 70, 218); font-weight: 900;}
 .color2{color: rgba(37, 146, 218, 0.973); font-weight: 900;}
 .color3{color: rgb(218, 215, 37); font-weight: 900;}
@@ -554,6 +544,21 @@ label{
       margin-right: 20px;
 
     }
+
+    .footer {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 10em;
+      text-align: center;
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+
+    .socials, .contact{
+      padding: 20px 0px;
+    }
+
 }
 
 @media screen and (min-width: 900px){
@@ -597,6 +602,16 @@ label{
         max-width: 1200px;
         margin: auto;
         position: relative;
+    }
+
+    .contact{
+        float: right;
+        margin-right: 20px;
+    }
+
+    .socials{
+        float: left;
+        margin-left: 20px;
     }
 
 }

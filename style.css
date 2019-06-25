@@ -53,7 +53,7 @@ body{
     height: 100px;
     background: none;
     padding: 0 20px;
-    max-width: 900px;
+    max-width: 1250px;
     margin: auto;
     font-family: 'Nunito Sans', sans-serif;
     position: relative;
@@ -373,6 +373,23 @@ label{
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    position: relative;
+}
+
+.my-finished-work::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s 0.3s;
+}
+
+.my-finished-work:hover::after{
+  opacity: 0.7;
 }
 
 .message-input{
@@ -421,13 +438,13 @@ label{
 
 /* footer */
 .footer{
-    max-width: 90vh;
+    max-width: 1250px;
     margin: auto;
     font-size: 80%;
     position: relative;
     height: 50px;
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 
@@ -437,7 +454,8 @@ label{
     transition: 400ms;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5em;
-    margin: 5px;
+    margin: 10px;
+    margin-left: 0;
 }
 
 .socials a:hover{
@@ -446,12 +464,17 @@ label{
 
 .contact p{
   font-size: 1.3em;
+
 }
 
 .socials h3, .contact h3{
     color: #5e5e5e;
     padding: 10px 0px;
+    font-size: 1.2em;
+
 }
+
+
 
 .color1{color: rgb(37, 70, 218); font-weight: 900;}
 .color2{color: rgba(37, 146, 218, 0.973); font-weight: 900;}
@@ -538,7 +561,7 @@ label{
       margin: auto;
       margin-left: 1em;
       margin-top: 3em;
-      margin-bottom: 5em;
+      margin-bottom: 3em;
       margin-right: 1em;
     }
 
@@ -560,7 +583,9 @@ label{
       margin-left: auto;
     }
 
-    .competition-text p, .competition-text h3, .text-about-me p,
+    .competition-text p,
+    .competition-text h3,
+    .text-about-me p,
     .text-about-me h1{
       margin-left: 20px;
       margin-right: 20px;
@@ -576,14 +601,17 @@ label{
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 10em;
       text-align: center;
       margin-top: 3em;
       margin-bottom: 3em;
     }
 
+    .socials a{
+      margin-left: 20px;
+    }
+
     .socials, .contact{
-      padding: 20px 0px;
+      padding: 10px 0px;
     }
 
 }
